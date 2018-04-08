@@ -15,23 +15,16 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 /**
  *
- * @author
+ * @author yuxuan
  * @create 2018-03-29 下午11:31
  **/
-public class Main {
-//    public static void main(String args[]) {
-//        Config config = ConfigService.getAppConfig(); //config instance is singleton for each namespace and is never null
-//        String someKey = "timeout";
-//        String someDefaultValue = "0";
-//        String value = config.getProperty(someKey, someDefaultValue);
-//        System.out.println("get value : " + value);
-//    }
+public class SimpleApolloConfigDemo {
 
-    private static final Logger logger = LoggerFactory.getLogger(Main.class);
+    private static final Logger logger = LoggerFactory.getLogger(SimpleApolloConfigDemo.class);
     private String DEFAULT_VALUE = "undefined";
     private Config config;
 
-    public Main() {
+    public SimpleApolloConfigDemo() {
         ConfigChangeListener changeListener = new ConfigChangeListener() {
             public void onChange(ConfigChangeEvent changeEvent) {
                 logger.info("Changes for namespace {}", changeEvent.getNamespace());
@@ -50,12 +43,11 @@ public class Main {
     private String getConfig(String key) {
         String result = config.getProperty(key, DEFAULT_VALUE);
         logger.info(String.format("Loading key : %s with value: %s", key, result));
-        System.out.println(String.format("Loading key : %s with value: %s", key, result));
         return result;
     }
 
     public static void main(String[] args) throws IOException {
-        Main apolloConfigDemo = new Main();
+        SimpleApolloConfigDemo apolloConfigDemo = new SimpleApolloConfigDemo();
         System.out.println(
                 "Apollo Config Demo. Please input key to get the value. Input quit to exit.");
         while (true) {
