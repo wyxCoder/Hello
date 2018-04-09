@@ -9,7 +9,10 @@
         </Async>
     </appenders>
     <loggers>
-        <root level="ERROR">
+        <logger name="com.ctrip.framework.apollo" additivity="false" level="INFO">
+            <AppenderRef ref="Async"/>
+        </logger>
+        <root level="INFO">
             <AppenderRef ref="Async"/>
         </root>
     </loggers>

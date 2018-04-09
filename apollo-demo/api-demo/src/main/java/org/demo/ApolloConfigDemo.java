@@ -57,7 +57,7 @@ public class ApolloConfigDemo {
         if (DEFAULT_VALUE.equals(result)) {
             result = publicConfig.getProperty(key, DEFAULT_VALUE);
         }
-        logger.info(String.format("Loading key : %s with value: %s", key, result));
+        System.out.println(String.format("Loading key : %s with value: %s", key, result));
         return result;
     }
 
