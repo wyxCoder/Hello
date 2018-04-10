@@ -1,4 +1,4 @@
-package org.demo.annotation.bean;
+package org.demo.annotationDemo.bean;
 
 import com.google.common.base.Charsets;
 import com.google.common.base.Strings;

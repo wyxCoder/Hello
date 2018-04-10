@@ -1,4 +1,4 @@
-package org.demo.annotation.config;
+package org.demo.annotationDemo.config;
 
 import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package org.demo.annotation.bean;
+package org.demo.annotationDemo.bean;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
