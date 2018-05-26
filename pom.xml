@@ -22,6 +22,7 @@
         <module>mybatis-demo</module>
         <module>apollo-demo</module>
         <module>login-demo</module>
+        <module>dubbo-demo</module>
     </modules>
 
     <properties>
