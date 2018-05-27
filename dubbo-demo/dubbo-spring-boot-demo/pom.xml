@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>provider-spring-boot-demo</module>
+        <module>consumer-spring-boot-demo</module>
     </modules>
 
     <dependencies>
