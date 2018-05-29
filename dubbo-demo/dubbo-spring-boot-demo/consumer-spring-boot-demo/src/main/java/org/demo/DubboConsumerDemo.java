@@ -8,14 +8,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * @create 2018-05-27 下午6:19
  **/
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "org.demo.controller")
 public class DubboConsumerDemo {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         SpringApplication.run(DubboConsumerDemo.class, args);
-        TimeUnit.SECONDS.sleep(100L);
-
     }
 
 }
