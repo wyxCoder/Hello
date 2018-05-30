@@ -1,6 +1,6 @@
 package org.demo;
 
-import org.springframework.boot.SpringApplication;
+import com.alibaba.dubbo.spring.boot.annotation.EnableDubboConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
  * @create 2018-05-26 下午11:40
  **/
 @SpringBootApplication
+@EnableDubboConfiguration
 public class DubboProviderDemo {
 
     public static void main(String[] args) throws InterruptedException {
